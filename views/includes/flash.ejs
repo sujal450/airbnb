@@ -1,0 +1,16 @@
+<%if(success&& success.length){%>
+    <div class="alert alert-success alert-dismissible fade show col-6 offset-3" role="alert">
+    <%=success%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
+
+<%if(error && error.length){%>
+    <div class="alert alert-danger alert-dismissible fade show col-6 offset-3" role="alert">
+    <%=error%>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<%}%>
+
+
+<!-- here success is a an array which exists so the condition will always be ture so we need to add one condition that it's length shouldnot be zero then only a alert box will be shown -->
